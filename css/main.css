@@ -1,9 +1,14 @@
-body, html { width: 100%; height: 100%; -webkit-user-select: none; /*cursor: none;*/ }
+body, html { width: 100%; height: 100%; -webkit-user-select: none; /*cursor: none;*/ overflow: hidden; background-color: black; }
 
-#videos { width: 800px; margin: 0 auto; }
-.playing { border: 2px solid red; }
+#video_container { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
 
-#video { width: 638px; margin: 0 auto; }
+#videos { position: absolute; bottom: 0px; left: 0px; height: 100px; width: 5000px; z-index: 1000; }
+#videos .video { float: left; height: 100px; width: 134px; }
+#videos .playing { border: 2px solid red; height: 96px; width: 130px; }
+
+#controls { position: absolute; bottom: 100px; left: 0px; width: 100%; z-index: 1000; color: white; font: bold 12px Helvetica; text-transform: uppercase; }
+#next { width: 100px; height: 30px; float: right; text-align: center; cursor: pointer; }
+#play_pause { width: 100px; height: 30px; float: left; text-align: center; cursor: pointer; }
 
 .clear:after { content: ".";  display: block; height: 0; clear: both; visibility: hidden; }
 .clear { display: inline-block; }
