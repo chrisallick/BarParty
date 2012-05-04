@@ -1,0 +1,11 @@
+body, html { width: 100%; height: 100%; -webkit-user-select: none; /*cursor: none;*/ }
+
+#videos { width: 800px; margin: 0 auto; }
+.playing { border: 2px solid red; }
+
+#video { width: 638px; margin: 0 auto; }
+
+.clear:after { content: ".";  display: block; height: 0; clear: both; visibility: hidden; }
+.clear { display: inline-block; }
+* html .clear { height: 1%; }
+.clear { display: block; }
